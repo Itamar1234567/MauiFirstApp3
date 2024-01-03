@@ -5,15 +5,20 @@
 
     <StackLayout Margin="7,13,7,13" Orientation="Vertical" BackgroundColor="CadetBlue">
         
-        <Label x:Name="lbl_year"  WidthRequest="300" HeightRequest="100" Margin="10,30,10,20" Text="Goodbey 2023!" BackgroundColor="DarkCyan" 
+        <!--<Label x:Name="lbl_year"  WidthRequest="300" HeightRequest="100" Margin="10,30,10,20" Text="Goodbey 2023!" BackgroundColor="DarkCyan" 
                TextColor="Gold" FontSize="22" FontFamily="Pacifico" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
 
         
         <Image x:Name="img_bot"  Source="dotnet_bot" Margin="0,100,0,0" Aspect="AspectFit" HeightRequest="200"/>
 
-        <Button x:Name="btn_changeText" Clicked="ChangeTextEvent" IsEnabled="True" Text="החלף טקסט" Margin="0,50,0,0" FontFamily="Pacifico" TextColor="Gold" BackgroundColor="DarkCyan" BorderWidth="2" BorderColor="White" HeightRequest="150" WidthRequest="150" FontSize="16" CornerRadius="150"/>
+        <Button x:Name="btn_changeText" Clicked="ChangeTextEvent" IsEnabled="True" Text="החלף טקסט" Margin="0,50,0,0" FontFamily="Pacifico" TextColor="Gold" BackgroundColor="DarkCyan" BorderWidth="2" BorderColor="White" HeightRequest="150" WidthRequest="150" FontSize="16" CornerRadius="150"/>-->
 
+        <Button x:Name="btn_changeMonkeyImageUp" Clicked="ChangeMonkeyImageUpEvent" IsEnabled="True" Text="למעלה" Margin="0,100,0,0" FontFamily="Pacifico" TextColor="Gold" BackgroundColor="DarkCyan" BorderWidth="2" BorderColor="White" HeightRequest="50" WidthRequest="150" FontSize="13" CornerRadius="150"/> 
+        <Image x:Name="img_monkey" VerticalOptions="Center" Margin="0,100,0,100" Aspect="AspectFit" HeightRequest="200"/>
+        <Button x:Name="btn_changeMonkeyImageDown" Clicked="ChangeMonkeyImageDownEvent" IsEnabled="True" Text="למטה" Margin="0,0,0,0" FontFamily="Pacifico" TextColor="Gold" BackgroundColor="DarkCyan" BorderWidth="2" BorderColor="White" HeightRequest="50" WidthRequest="150" FontSize="13" CornerRadius="150"/>
     </StackLayout>
 
-    
+
+
+
 </ContentPage>

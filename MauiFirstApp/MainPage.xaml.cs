@@ -1,29 +1,58 @@
-﻿using static System.Net.Mime.MediaTypeNames;
+﻿using MauiApp2;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace MauiFirstApp
 {
     public partial class MainPage : ContentPage
     {
-
+        List<Monkey> monkeyList;
+        int place = 0;
         public MainPage()
         {
             InitializeComponent();
+            monkeyList = Monkey.GetMonkeys();
+            img_monkey.Source = monkeyList[place].Image;
         }
-        private void ChangeTextEvent(object sender, EventArgs e)
+
+        private void ChangeMonkeyImageUpEvent(object sender, EventArgs e)
         {
-            Button bt = (Button)sender;
-            if (bt.Text == "החלף טקסט")
+            if (place < monkeyList.Count()-1)
             {
-                bt.Text = "החזר טקסט";
-                lbl_year.Text = "Welcome 2024!";
+                place++;
+                img_monkey.Source = monkeyList[place].Image;
             }
             else
+                btn_changeMonkeyImageUp.IsEnabled = false;
+               
+        }
+        private void ChangeMonkeyImageDownEvent(object sender, EventArgs e)
+        {
+            if (place > 0)
             {
-                bt.Text = "החלף טקסט";
-                lbl_year.Text = "Goodbey 2023!";
+                place--;
+                img_monkey.Source = monkeyList[place].Image;
             }
-                
+            else
+                btn_changeMonkeyImageUp.IsEnabled = false;
 
         }
+
+        //private void ChangeTextEvent(object sender, EventArgs e)
+        //{
+        //    Button bt = (Button)sender;
+        //    if (bt.Text == "החלף טקסט")
+        //    {
+        //        bt.Text = "החזר טקסט";
+        //        lbl_year.Text = "Welcome 2024!";
+        //    }
+        //    else
+        //    {
+        //        bt.Text = "החלף טקסט";
+        //        lbl_year.Text = "Goodbey 2023!";
+        //    }
+
+
+        //}
+
     }
 }
