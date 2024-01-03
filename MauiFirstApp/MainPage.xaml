@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFirstApp.MainPage">
+
+    <StackLayout Margin="7,13,7,13" Orientation="Vertical" BackgroundColor="CadetBlue">
+        
+        <Label WidthRequest="300" HeightRequest="100" Margin="10,30,10,20" Text="Hello!" BackgroundColor="DarkCyan" 
+               TextColor="Gold" FontSize="22" FontFamily="Pacifico" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+        <Button Text="החלף טקסט" Margin="0,50,0,0" FontFamily="Pacifico" TextColor="Gold" BackgroundColor="DarkCyan" BorderWidth="2" BorderColor="White" HeightRequest="150" WidthRequest="150" FontSize="16" CornerRadius="150"/>
+        
+        <Image Source="dotnet_bot" Margin="0,100,0,0" Aspect="AspectFit" HeightRequest="200"/>
+
+    </StackLayout>
+
+    
+</ContentPage>
