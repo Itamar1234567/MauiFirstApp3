@@ -23,7 +23,12 @@ namespace MauiFirstApp
             }
             else
                 btn_changeMonkeyImageUp.IsEnabled = false;
-               
+
+            if (place == 1 && btn_changeMonkeyImageDown.IsEnabled == false)
+            {
+                btn_changeMonkeyImageDown.IsEnabled = true;
+            }
+
         }
         private void ChangeMonkeyImageDownEvent(object sender, EventArgs e)
         {
@@ -34,6 +39,10 @@ namespace MauiFirstApp
             }
             else
                 btn_changeMonkeyImageUp.IsEnabled = false;
+            if(place ==monkeyList.Count()-2 && btn_changeMonkeyImageUp.IsEnabled==false) 
+            {
+                btn_changeMonkeyImageUp.IsEnabled = true;
+            }
 
         }
 
