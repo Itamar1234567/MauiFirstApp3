@@ -38,8 +38,8 @@ namespace MauiFirstApp
                 img_monkey.Source = monkeyList[place].Image;
             }
             else
-                btn_changeMonkeyImageUp.IsEnabled = false;
-            if(place ==monkeyList.Count()-2 && btn_changeMonkeyImageUp.IsEnabled==false) 
+                btn_changeMonkeyImageDown.IsEnabled = false;
+            if(place == monkeyList.Count()-2 && btn_changeMonkeyImageUp.IsEnabled==false) 
             {
                 btn_changeMonkeyImageUp.IsEnabled = true;
             }

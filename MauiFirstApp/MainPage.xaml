@@ -15,7 +15,7 @@
 
         <Button x:Name="btn_changeMonkeyImageUp" Clicked="ChangeMonkeyImageUpEvent" IsEnabled="True" Text="למעלה" Margin="0,100,0,0" FontFamily="Pacifico" TextColor="Gold" BackgroundColor="DarkCyan" BorderWidth="2" BorderColor="White" HeightRequest="50" WidthRequest="150" FontSize="13" CornerRadius="150"/> 
         <Image x:Name="img_monkey" VerticalOptions="Center" Margin="0,100,0,100" Aspect="AspectFit" HeightRequest="200"/>
-        <Button x:Name="btn_changeMonkeyImageDown" Clicked="ChangeMonkeyImageDownEvent" IsEnabled="True" Text="למטה" Margin="0,0,0,0" FontFamily="Pacifico" TextColor="Gold" BackgroundColor="DarkCyan" BorderWidth="2" BorderColor="White" HeightRequest="50" WidthRequest="150" FontSize="13" CornerRadius="150"/>
+        <Button x:Name="btn_changeMonkeyImageDown" Clicked="ChangeMonkeyImageDownEvent" IsEnabled="False" Text="למטה" Margin="0,0,0,0" FontFamily="Pacifico" TextColor="Gold" BackgroundColor="DarkCyan" BorderWidth="2" BorderColor="White" HeightRequest="50" WidthRequest="150" FontSize="13" CornerRadius="150"/>
     </StackLayout>
 
 
