@@ -1,13 +1,19 @@
+using MauiApp2;
 namespace MauiFirstApp;
+
 
 public partial class DynamicControlsPage : ContentPage
 {
+    List<Monkey> monkeyList;
+    int place = 0;
     int countup = 0;
     int countdown = 0;
+   
     public DynamicControlsPage()
     {
         InitializeComponent();
         //הוספת הפקדים בצורה דינאמית
+        monkeyList = Monkey.GetMonkeys();
         InitializeControlls();
     }
 
